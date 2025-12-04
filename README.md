@@ -5,6 +5,7 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04_LTS-E95420?logo=ubuntu)
 ![MariaDB](https://img.shields.io/badge/MariaDB-10.x-003545?logo=mariadb)
 ![Apache](https://img.shields.io/badge/Apache-2.4-D22128?logo=apache)
+![VMware](https://img.shields.io/badge/VMware-Workstation-607078?logo=vmware)
 
 Sistema completo de Mesa de Ayuda (Help Desk) implementado con GLPI 10, configurado para simular un entorno empresarial peruano con gestión profesional de tickets, SLAs, categorías y múltiples niveles de soporte técnico.
 
