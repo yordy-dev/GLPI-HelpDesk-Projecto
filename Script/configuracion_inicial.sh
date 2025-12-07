@@ -3,7 +3,7 @@
 ##############################################
 # Script de Configuración Inicial GLPI
 # Proyecto: GLPI HelpDesk - Mesa de Ayuda
-# Autor: Proyecto Académico
+# Autor: Yordy-dev
 ##############################################
 
 echo "==================================="
