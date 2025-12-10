@@ -7,101 +7,322 @@
 ![Apache](https://img.shields.io/badge/Apache-2.4-D22128?logo=apache)
 ![VMware](https://img.shields.io/badge/VMware-Workstation-607078?logo=vmware)
 
-Sistema completo de Mesa de Ayuda (Help Desk) implementado con GLPI 10, configurado para simular un entorno empresarial peruano con gestión profesional de tickets, SLAs, categorías y múltiples niveles de soporte técnico.
+---
+
+## 📋 Descripción del Proyecto
+
+**Sistema completo de Mesa de Ayuda (Help Desk)** implementado con **GLPI 10**, configurado para simular un **entorno empresarial peruano** con gestión profesional de **tickets, SLAs, categorías** y **múltiples niveles de soporte técnico**.
+
+> [!NOTE]
+> Este es un **proyecto de portafolio** que demuestra competencias completas en **infraestructura de sistemas**, **gestión de servicios TI** y **mejores prácticas ITIL v4**.
 
 ---
 
-## 📊 Impacto y Alcance
+## 🎯 Impacto y Valor del Proyecto
 
-Este proyecto demuestra capacidad para:
-- **Despliegue de Infraestructura**: Instalación y configuración completa de stack LAMP (Linux, Apache, MariaDB, PHP) en producción.
-- **Gestión de Servicios ITIL**: Implementación de procesos de Service Desk alineados con mejores prácticas ITIL v4.
-- **Soporte Multi-Sede**: Configuración de entidades empresariales con gestión descentralizada (Lima, Arequipa, Trujillo).
-- **Cumplimiento de SLA**: Sistema de acuerdos de nivel de servicio con tiempos de respuesta profesionales (1h, 2h, 8h).
-- **Escalabilidad**: Arquitectura preparada para crecimiento de usuarios, técnicos y volumen de tickets.
+### Competencias Profesionales Demostradas
+
+Este proyecto evidencia capacidad técnica en:
+
+- ✅ **Despliegue de Infraestructura**: Instalación y configuración completa de **stack LAMP** (Linux, Apache, MariaDB, PHP) en producción
+- ✅ **Gestión de Servicios ITIL**: Implementación de procesos de **Service Desk** alineados con **mejores prácticas ITIL v4**
+- ✅ **Soporte Multi-Sede**: Configuración de **entidades empresariales** con gestión descentralizada (**Lima, Arequipa, Trujillo**)
+- ✅ **Cumplimiento de SLA**: Sistema de **acuerdos de nivel de servicio** con tiempos de respuesta profesionales (**1h, 2h, 8h**)
+- ✅ **Escalabilidad**: Arquitectura preparada para **crecimiento de usuarios**, técnicos y volumen de tickets
+
+### Resultados Cuantificables
+
+| Métrica | Valor Implementado |
+|---------|-------------------|
+| **Entidades Configuradas** | 3 (Lima, Arequipa, Trujillo) |
+| **Grupos de Soporte** | 3 (Mesa Ayuda, Nivel 2, Infraestructura) |
+| **Categorías Creadas** | 15+ (Hardware, Software, Redes, Accesos, Infraestructura) |
+| **SLAs Definidos** | 4 niveles (1h, 2h, 8h, 72h) |
+| **Tickets Simulados** | **10 casos reales documentados** |
+| **Usuarios Creados** | Múltiples perfiles (Admin, Técnicos, Usuarios) |
 
 ---
 
-## ✨ Características Implementadas
+## 🏗️ Arquitectura y Tecnologías
 
-### 🖥️ Infraestructura Técnica
-- **Servidor**: Ubuntu Server 22.04 LTS (VM optimizada)
-- **Stack Completo**: Apache 2.4 + PHP 8.x + MariaDB 10.x
-- **Aplicación**: GLPI 10.0.14 (última versión estable)
-- **Seguridad**: Instalación asegurada, firewall configurado, permisos optimizados
-- **Automatización**: Tareas programadas con cron para mantenimiento
+### Stack Tecnológico Implementado
 
-### 🏢 Configuración Organizacional
-- **Entidades Multi-Sede**: Lima (Sede Central), Arequipa (Regional Sur), Trujillo (Regional Norte)
-- **Grupos de Soporte**: Mesa de Ayuda (Nivel 1), Soporte Técnico (Nivel 2), Infraestructura/Servidores
-- **Perfiles de Usuario**: Usuario Final, Técnico N1, Técnico N2, Administrador de Sistema
+![Diagrama de Arquitectura](Diagrama/diagrama_entorno.png)
+> **Vista completa del stack tecnológico**: desde usuarios hasta infraestructura
 
-### 📋 Categorización Profesional
-Sistema de categorías adaptado al contexto empresarial peruano:
-- **Hardware**: Equipos de cómputo, impresoras, periféricos
-- **Software**: Aplicaciones ERP (SIAF, SIGA), Office 365, software especializado
-- **Redes**: Conectividad WiFi/LAN, VPN corporativa, Internet
-- **Accesos**: Correo electrónico, sistemas institucionales, permisos
-- **Infraestructura**: Servidores, almacenamiento, datacenter
+#### 🖥️ Infraestructura Base
+
+- **Sistema Operativo**: Ubuntu Server **22.04 LTS** (VM optimizada)
+- **Servidor Web**: Apache **2.4** con VirtualHosts configurados
+- **Base de Datos**: MariaDB **10.x** con optimizaciones de rendimiento
+- **Lenguaje**: PHP **8.x** con extensiones requeridas
+- **Aplicación**: GLPI **10.0.14** (última versión estable)
+
+> [!NOTE]
+> **Hardware Requerido (Máquina Virtual)**:  
+> - CPU: **2 núcleos**  
+> - RAM: **4 GB** (recomendado 8 GB)  
+> - Disco: **20 GB** disponibles (recomendado 40 GB)  
+> - Red: Conexión a Internet para descarga de paquetes
+
+#### 🔒 Seguridad y Automatización
+
+- **Firewall**: UFW configurado con reglas específicas
+- **Permisos**: Optimizados según principio de mínimo privilegio
+- **Automatización**: Tareas programadas con **cron** para mantenimiento
+- **Backups**: Scripts automáticos de respaldo de datos
+
+---
+
+## ✨ Características Principales
+
+### 🏢 Configuración Organizacional Empresarial
+
+#### Entidades Multi-Sede
+Estructura organizacional que refleja una **empresa peruana con presencia nacional**:
+
+- **Lima** (Sede Central) - Administración y soporte principal
+- **Arequipa** (Regional Sur) - Soporte descentralizado
+- **Trujillo** (Regional Norte) - Soporte descentralizado
+
+#### Grupos de Soporte Especializados
+
+- **Mesa de Ayuda (Nivel 1)**: Primera línea de atención, clasificación y resolución básica
+- **Soporte Técnico (Nivel 2)**: Incidencias técnicas complejas
+- **Infraestructura/Servidores**: Problemas críticos de infraestructura
+
+#### Perfiles de Usuario
+
+- **Usuario Final**: Creación de tickets y seguimiento
+- **Técnico N1**: Atención de primer nivel
+- **Técnico N2**: Soporte especializado
+- **Administrador de Sistema**: Configuración y administración completa
+
+### 📋 Sistema de Categorización Profesional
+
+Categorías adaptadas al **contexto empresarial peruano**:
+
+| Categoría | Subcategorías |
+|-----------|--------------|
+| **Hardware** | Equipos de cómputo, impresoras, periféricos |
+| **Software** | Aplicaciones ERP (SIAF, SIGA), Office 365, software especializado |
+| **Redes** | Conectividad WiFi/LAN, VPN corporativa, Internet |
+| **Accesos** | Correo electrónico, sistemas institucionales, permisos |
+| **Infraestructura** | Servidores, almacenamiento, datacenter |
 
 ### ⏱️ Acuerdos de Nivel de Servicio (SLA)
+
 | Prioridad | Tipo de Incidencia | Tiempo de Resolución |
 |-----------|-------------------|---------------------|
-| 🔴 Crítica | Servidor caído, sistema ERP inoperativo | **2 horas** |
-| 🟠 Alta | Sin acceso a correo, red caída, VPN no conecta | **1-2 horas** |
-| 🟡 Media | PC lenta, impresora no funciona, software con errores | **8 horas** |
-| 🟢 Baja | Reposición de periféricos, consultas generales | **24-72 horas** |
+| 🔴 **Crítica** | Servidor caído, sistema ERP inoperativo | **2 horas** |
+| 🟠 **Alta** | Sin acceso a correo, red caída, VPN no conecta | **1-2 horas** |
+| 🟡 **Media** | PC lenta, impresora no funciona, software con errores | **8 horas** |
+| 🟢 **Baja** | Reposición de periféricos, consultas generales | **24-72 horas** |
+
+> [!NOTE]
+> Los **SLAs** están configurados con **calendarios laborales** y sistema de **escalamiento automático** cuando se acerca el límite de tiempo.
 
 ### 🔔 Funcionalidades Avanzadas
-- **Asignación Automática**: Reglas de negocio para derivar tickets según categoría
-- **Notificaciones**: Alertas por correo en cada cambio de estado
-- **Escalamiento**: Sistema automático de escalado cuando se acerca el límite de SLA
-- **Historial Completo**: Registro detallado de todas las acciones y comunicaciones
-- **Inventario**: Gestión de activos TI vinculados a tickets
+
+- ✅ **Asignación Automática**: Reglas de negocio para derivar tickets según categoría
+- ✅ **Notificaciones**: Alertas por correo en cada cambio de estado
+- ✅ **Escalamiento**: Sistema automático de escalado cuando se acerca el límite de SLA
+- ✅ **Historial Completo**: Registro detallado de todas las acciones y comunicaciones
+- ✅ **Inventario**: Gestión de activos TI vinculados a tickets
 
 ---
 
-## 🚀 Documentación de Implementación
+## 🎫 Casos de Uso Reales - 10 Tickets Simulados
 
-El proyecto incluye documentación técnica completa en 3 fases:
+Tickets creados para demostrar la **gestión completa del ciclo de vida** de incidencias:
+
+### Tickets de Prioridad Alta (Críticos)
+
+#### 1. 🖥️ PC no enciende - Hardware crítico
+- **Categoría**: Hardware > Computadoras
+- **Prioridad**: **Alta** | **Impacto**: Medio
+- **Descripción**: Equipo de usuario en contabilidad no enciende después de corte de luz
+- **SLA**: Resolución en **8 horas**
+- **Evidencia**: `tickets/ticket1.png`
+
+#### 2. 📧 Usuario sin acceso a correo electrónico
+- **Categoría**: Accesos > Email
+- **Prioridad**: **Alta** | **Impacto**: Alto
+- **Descripción**: Usuario no puede ingresar a Outlook, error de credenciales
+- **SLA**: Resolución en **1 hora**
+- **Evidencia**: `tickets/ticket2.png`
+
+#### 3. 📡 Red WiFi caída en área administrativa
+- **Categoría**: Redes > WiFi
+- **Prioridad**: **Alta** | **Impacto**: Alto
+- **Descripción**: **15 usuarios** sin conectividad inalámbrica en piso 3
+- **SLA**: Resolución en **2 horas**
+- **Evidencia**: `tickets/ticket3.png`
+
+#### 6. 🔐 VPN corporativa no conecta desde remoto
+- **Categoría**: Redes > VPN
+- **Prioridad**: **Alta** | **Impacto**: Alto
+- **Descripción**: Usuario en teletrabajo no puede conectar a VPN de la empresa
+- **SLA**: Resolución en **2 horas**
+- **Evidencia**: `tickets/ticket6.png`
+
+#### 8. 💳 Sistema POS no permite facturar
+- **Categoría**: Software > Sistemas Críticos
+- **Prioridad**: **Alta** | **Impacto**: Alto
+- **Descripción**: Sistema de punto de venta offline, **ventas detenidas**
+- **SLA**: Resolución en **2 horas** (Crítico)
+- **Evidencia**: `tickets/ticket8.png`
+
+#### 9. 💾 Disco del servidor casi lleno (95%)
+- **Categoría**: Infraestructura > Servidores
+- **Prioridad**: **Alta** | **Impacto**: Alto
+- **Descripción**: Servidor de archivos con **95% de uso**, riesgo de colapso
+- **SLA**: Resolución en **2 horas**
+- **Evidencia**: `tickets/ticket9.png`
+
+### Tickets de Prioridad Media
+
+#### 4. 🖨️ Impresora no imprime documentos
+- **Categoría**: Hardware > Impresoras
+- **Prioridad**: Media | **Impacto**: Medio
+- **Descripción**: Impresora HP LaserJet en cola continua pero no imprime
+- **SLA**: Resolución en **8 horas**
+- **Evidencia**: `tickets/ticket4.png`
+
+#### 5. 🐢 PC extremadamente lenta
+- **Categoría**: Hardware > Rendimiento
+- **Prioridad**: Media | **Impacto**: Medio
+- **Descripción**: Equipo tarda **10 minutos** en iniciar, aplicaciones no responden
+- **SLA**: Resolución en **8 horas**
+- **Evidencia**: `tickets/ticket5.png`
+
+#### 7. 📊 Microsoft Office 365 presenta errores
+- **Categoría**: Software > Aplicaciones
+- **Prioridad**: Media | **Impacto**: Medio
+- **Descripción**: Excel se cierra inesperadamente al abrir archivos grandes
+- **SLA**: Resolución en **8 horas**
+- **Evidencia**: `tickets/ticket7.png`
+
+### Tickets de Prioridad Baja
+
+#### 10. ⌨️ Solicitud de reposición de teclado y mouse
+- **Categoría**: Hardware > Periféricos
+- **Prioridad**: Baja | **Impacto**: Bajo
+- **Descripción**: Teclado con teclas dañadas, mouse con click defectuoso
+- **SLA**: Resolución en **72 horas**
+- **Evidencia**: `tickets/ticket10.png`
+
+### 📊 Cobertura de Incidencias
+
+- ✅ **Hardware**: 40% de tickets
+- ✅ **Software**: 20% de tickets
+- ✅ **Redes**: 20% de tickets
+- ✅ **Accesos**: 10% de tickets
+- ✅ **Infraestructura**: 10% de tickets
+
+---
+
+## 📸 Evidencias del Proyecto
+
+### ⚙️ Instalación de Infraestructura
+
+#### Apache y PHP Configurados
+![Apache PHP](Evidencia/capturas_instalacion/apache_php.png)
+> **Verificación de servicios web funcionando correctamente**
+
+#### Base de Datos MariaDB
+![Base de Datos](Evidencia/capturas_instalacion/base_datos_creada.png)
+> Base de datos **`glpidb`** creada con usuario y privilegios
+
+### 🎛️ Configuración de GLPI
+
+#### Panel de Instalación Completada
+![GLPI Instalado](Evidencia/configuracion_glpi/glpi_instalacion.png)
+> **Instalación web de GLPI finalizada exitosamente**
+
+#### Categorías Empresariales
+![Categorías](Evidencia/configuracion_glpi/categorias.png)
+> Sistema de categorías adaptado al **contexto peruano**
+
+#### Grupos de Soporte
+![Grupos](Evidencia/configuracion_glpi/grupos.png)
+> Estructura de equipos: **Mesa de Ayuda, Soporte N2, Infraestructura**
+
+#### SLAs Configurados
+![SLAs](Evidencia/configuracion_glpi/slas.png)
+> **Acuerdos de nivel de servicio** con tiempos definidos
+
+---
+
+## 🛠️ Competencias Técnicas Aplicadas
+
+### Infraestructura y Sistemas
+
+- **Administración Linux**: Gestión de **Ubuntu Server**, usuarios, permisos y servicios
+- **Servidor Web**: Configuración de **Apache 2.4** con VirtualHosts y módulos
+- **Bases de Datos**: Instalación, aseguramiento y optimización de **MariaDB**
+- **Scripting**: Automatización con **Bash** para backups y tareas recurrentes
+
+### Gestión de Servicios TI
+
+- **ITIL Framework**: Implementación de procesos de **Incident Management** y **Service Desk**
+- **SLA Management**: Definición y monitoreo de **acuerdos de nivel de servicio**
+- **Gestión de Activos**: Inventario de hardware y software vinculado a usuarios
+- **Escalamiento**: Reglas de escalado automático según **prioridad y tiempo**
+
+### Habilidades Blandas
+
+- **Documentación Técnica**: Creación de guías paso a paso para instalación y configuración
+- **Análisis de Requerimientos**: Adaptación de GLPI a **necesidades empresariales peruanas**
+- **Resolución de Problemas**: Gestión completa de tickets con evidencia y seguimiento
+- **Organización**: Estructura clara de entidades, categorías y flujos de trabajo
+
+---
+
+## 📚 Documentación Técnica Completa
+
+El proyecto incluye **documentación detallada en 3 fases**:
 
 ### 📖 Fase 1: Preparación del Entorno
 **Archivo**: `Configuracion_Instalacion/Parte1_Entorno.md`
 
-Cubre:
+**Contenido**:
 - Requisitos de hardware y software
-- Instalación de Ubuntu Server 22.04 LTS
-- Configuración de Apache 2.4
-- Instalación de PHP 8.x con extensiones requeridas
-- Instalación y aseguramiento de MariaDB
-- Configuración de firewall (UFW)
+- Instalación de **Ubuntu Server 22.04 LTS**
+- Configuración de **Apache 2.4**
+- Instalación de **PHP 8.x** con extensiones requeridas
+- Instalación y aseguramiento de **MariaDB**
+- Configuración de firewall (**UFW**)
 
 ### 📖 Fase 2: Instalación de GLPI
 **Archivo**: `Configuracion_Instalacion/Parte2_Instalacion_GLPI.md`
 
-Cubre:
-- Descarga e instalación de GLPI 10.0.14
-- Creación de base de datos `glpidb`
+**Contenido**:
+- Descarga e instalación de **GLPI 10.0.14**
+- Creación de base de datos **`glpidb`**
 - Configuración de permisos y VirtualHost
 - Instalación web paso a paso
-- Medidas de seguridad post-instalación
+- **Medidas de seguridad post-instalación**
 - Configuración de tareas automáticas (cron)
 
 ### 📖 Fase 3: Configuración Profesional
 **Archivo**: `Configuracion_Instalacion/Parte3_Configuracion_Profesional.md`
 
-Cubre:
+**Contenido**:
 - Estructura organizacional (entidades, grupos, perfiles)
-- Configuración de categorías empresariales
-- Definición de SLAs con calendarios
+- Configuración de **categorías empresariales**
+- Definición de **SLAs con calendarios**
 - Reglas de asignación automática
 - Sistema de notificaciones y alertas
-- Configuración de backup automático
+- Configuración de **backup automático**
 - Recomendaciones de plugins y mejores prácticas
+
+> [!NOTE]
+> Toda la documentación está **escrita en español** y adaptada al contexto empresarial peruano.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Repositorio
 
 ```text
 GLPI-HelpDesk-Projecto/
@@ -138,185 +359,19 @@ GLPI-HelpDesk-Projecto/
 
 ---
 
-## 🎫 Casos de Uso: 10 Tickets Reales Simulados
+## 🚀 Guía de Instalación
 
-A continuación se detallan los 10 tickets creados para demostrar la gestión completa del ciclo de vida:
+### Opción 1: Documentación Paso a Paso (Recomendado)
 
-### 1. 🖥️ PC no enciende - Hardware crítico
-- **Categoría**: Hardware > Computadoras
-- **Prioridad**: Alta | **Impacto**: Medio
-- **Descripción**: Equipo de usuario en contabilidad no enciende después de corte de luz
-- **SLA**: Resolución en 8 horas
-- **Evidencia**: `tickets/ticket1.png`
+1. **Preparar el entorno**: Leer `Configuracion_Instalacion/Parte1_Entorno.md`
+2. **Instalar GLPI**: Leer `Configuracion_Instalacion/Parte2_Instalacion_GLPI.md`
+3. **Configurar el sistema**: Leer `Configuracion_Instalacion/Parte3_Configuracion_Profesional.md`
 
-### 2. 📧 Usuario sin acceso a correo electrónico
-- **Categoría**: Accesos > Email
-- **Prioridad**: Alta | **Impacto**: Alto
-- **Descripción**: Usuario no puede ingresar a Outlook, error de credenciales
-- **SLA**: Resolución en 1 hora
-- **Evidencia**: `tickets/ticket2.png`
-
-### 3. 📡 Red WiFi caída en área administrativa
-- **Categoría**: Redes > WiFi
-- **Prioridad**: Alta | **Impacto**: Alto
-- **Descripción**: 15 usuarios sin conectividad inalámbrica en piso 3
-- **SLA**: Resolución en 2 horas
-- **Evidencia**: `tickets/ticket3.png`
-
-### 4. 🖨️ Impresora no imprime documentos
-- **Categoría**: Hardware > Impresoras
-- **Prioridad**: Media | **Impacto**: Medio
-- **Descripción**: Impresora HP LaserJet en cola continua pero no imprime
-- **SLA**: Resolución en 8 horas
-- **Evidencia**: `tickets/ticket4.png`
-
-### 5. 🐢 PC extremadamente lenta
-- **Categoría**: Hardware > Rendimiento
-- **Prioridad**: Media | **Impacto**: Medio
-- **Descripción**: Equipo tarda 10 minutos en iniciar, aplicaciones no responden
-- **SLA**: Resolución en 8 horas
-- **Evidencia**: `tickets/ticket5.png`
-
-### 6. 🔐 VPN corporativa no conecta desde remoto
-- **Categoría**: Redes > VPN
-- **Prioridad**: Alta | **Impacto**: Alto
-- **Descripción**: Usuario en teletrabajo no puede conectar a VPN de la empresa
-- **SLA**: Resolución en 2 horas
-- **Evidencia**: `tickets/ticket6.png`
-
-### 7. 📊 Microsoft Office 365 presenta errores
-- **Categoría**: Software > Aplicaciones
-- **Prioridad**: Media | **Impacto**: Medio
-- **Descripción**: Excel se cierra inesperadamente al abrir archivos grandes
-- **SLA**: Resolución en 8 horas
-- **Evidencia**: `tickets/ticket7.png`
-
-### 8. 💳 Sistema POS no permite facturar
-- **Categoría**: Software > Sistemas Críticos
-- **Prioridad**: Alta | **Impacto**: Alto
-- **Descripción**: Sistema de punto de venta offline, ventas detenidas
-- **SLA**: Resolución en 2 horas (Crítico)
-- **Evidencia**: `tickets/ticket8.png`
-
-### 9. 💾 Disco del servidor casi lleno (95%)
-- **Categoría**: Infraestructura > Servidores
-- **Prioridad**: Alta | **Impacto**: Alto
-- **Descripción**: Servidor de archivos con 95% de uso, riesgo de colapso
-- **SLA**: Resolución en 2 horas
-- **Evidencia**: `tickets/ticket9.png`
-
-### 10. ⌨️ Solicitud de reposición de teclado y mouse
-- **Categoría**: Hardware > Periféricos
-- **Prioridad**: Baja | **Impacto**: Bajo
-- **Descripción**: Teclado con teclas dañadas, mouse con click defectuoso
-- **SLA**: Resolución en 72 horas
-- **Evidencia**: `tickets/ticket10.png`
-
----
-
-## 📸 Evidencias Visuales
-
-### 🏗️ Arquitectura del Sistema
-![Diagrama de Arquitectura](Diagrama/diagrama_entorno.png)
-> Vista completa del stack tecnológico: desde usuarios hasta infraestructura
-
-### ⚙️ Capturas de Instalación
-
-#### Apache y PHP Configurados
-![Apache PHP](Evidencia/capturas_instalacion/apache_php.png)
-> Verificación de servicios web funcionando correctamente
-
-#### Base de Datos MariaDB
-![Base de Datos](Evidencia/capturas_instalacion/base_datos_creada.png)
-> Base de datos `glpidb` creada con usuario y privilegios
-
-### 🎛️ Configuración de GLPI
-
-#### Panel de Instalación Completada
-![GLPI Instalado](Evidencia/configuracion_glpi/glpi_instalacion.png)
-> Instalación web de GLPI finalizada exitosamente
-
-#### Categorías Empresariales
-![Categorías](Evidencia/configuracion_glpi/categorias.png)
-> Sistema de categorías adaptado al contexto peruano
-
-#### Grupos de Soporte
-![Grupos](Evidencia/configuracion_glpi/grupos.png)
-> Estructura de equipos: Mesa de Ayuda, Soporte N2, Infraestructura
-
-#### SLAs Configurados
-![SLAs](Evidencia/configuracion_glpi/slas.png)
-> Acuerdos de nivel de servicio con tiempos definidos
-
----
-
-## 🛠️ Tecnologías y Competencias Demostradas
-
-### Infraestructura y Sistemas
-- **Administración Linux**: Gestión de Ubuntu Server, usuarios, permisos y servicios
-- **Servidor Web**: Configuración de Apache 2.4 con VirtualHosts y módulos
-- **Bases de Datos**: Instalación, aseguramiento y optimización de MariaDB
-- **Scripting**: Automatización con Bash para backups y tareas recurrentes
-
-### Gestión de Servicios TI
-- **ITIL Framework**: Implementación de procesos de Incident Management y Service Desk
-- **SLA Management**: Definición y monitoreo de acuerdos de nivel de servicio
-- **Gestión de Activos**: Inventario de hardware y software vinculado a usuarios
-- **Escalamiento**: Reglas de escalado automático según prioridad y tiempo
-
-### Habilidades Blandas
-- **Documentación Técnica**: Creación de guías paso a paso para instalación y configuración
-- **Análisis de Requerimientos**: Adaptación de GLPI a necesidades empresariales peruanas
-- **Resolución de Problemas**: Gestión completa de tickets con evidencia y seguimiento
-- **Organización**: Estructura clara de entidades, categorías y flujos de trabajo
-
----
-
-## 🎯 Resultados y Métricas
-
-### Configuración Actual
-| Métrica | Valor |
-|---------|-------|
-| **Entidades** | 3 (Lima, Arequipa, Trujillo) |
-| **Grupos de Soporte** | 3 (Mesa Ayuda, N2, Infraestructura) |
-| **Categorías** | 15+ (Hardware, Software, Redes, Accesos, Infraestructura) |
-| **SLAs Definidos** | 4 niveles (1h, 2h, 8h, 72h) |
-| **Tickets Simulados** | 10 casos reales documentados |
-| **Usuarios Creados** | Múltiples perfiles (Admin, Técnicos, Usuarios) |
-
-### Cobertura de Incidencias
-- ✅ Hardware: 40% de tickets
-- ✅ Software: 20% de tickets
-- ✅ Redes: 20% de tickets
-- ✅ Accesos: 10% de tickets
-- ✅ Infraestructura: 10% de tickets
-
----
-
-## 📋 Requisitos del Sistema
-
-### Hardware Mínimo (Máquina Virtual)
-- **CPU**: 2 núcleos
-- **RAM**: 4 GB (recomendado 8 GB)
-- **Disco**: 20 GB disponibles (recomendado 40 GB)
-- **Red**: Conexión a Internet para descarga de paquetes
-
-### Software Requerido
-- **SO**: Ubuntu Server 22.04 LTS (o compatible Debian/Ubuntu)
-- **Apache**: 2.4+
-- **PHP**: 8.0+ con extensiones: mysql, xml, intl, ldap, apcu, mbstring, zip, gd, curl, bz2
-- **MariaDB**: 10.2+ (o MySQL 5.7+)
-
----
-
-## 🔧 Instalación Rápida
-
-### Opción 1: Seguir Documentación Completa
-1. Leer `Configuracion_Instalacion/Parte1_Entorno.md`
-2. Leer `Configuracion_Instalacion/Parte2_Instalacion_GLPI.md`
-3. Leer `Configuracion_Instalacion/Parte3_Configuracion_Profesional.md`
+> [!NOTE]
+> Cada archivo de documentación incluye **comandos exactos** y **capturas de pantalla** del proceso.
 
 ### Opción 2: Script Automático (Avanzado)
+
 **Próximamente**: Se incluirá script de instalación automatizada
 
 ```bash
@@ -326,27 +381,35 @@ sudo bash Script/configuracion_inicial.sh
 
 ---
 
-## ❓ Solución de Problemas Comunes
+## ❓ Solución de Problemas
 
-**GLPI muestra página en blanco:**
+### GLPI muestra página en blanco
+
+**Solución**:
 - Verificar permisos: `sudo chown -R www-data:www-data /var/www/html/glpi`
 - Revisar logs de Apache: `sudo tail -f /var/log/apache2/error.log`
 
-**No se puede conectar a la base de datos:**
+### No se puede conectar a la base de datos
+
+**Solución**:
 - Verificar credenciales en `config/config_db.php`
 - Comprobar que MariaDB esté corriendo: `sudo systemctl status mariadb`
 
-**Tareas programadas no funcionan:**
+### Tareas programadas no funcionan
+
+**Solución**:
 - Verificar configuración de cron: `sudo crontab -l`
 - Revisar logs de GLPI en `/var/www/html/glpi/files/_log/`
 
-**Notificaciones no se envían:**
-- Configurar servidor SMTP en Configuración > Notificaciones > Email
+### Notificaciones no se envían
+
+**Solución**:
+- Configurar servidor SMTP en **Configuración > Notificaciones > Email**
 - Verificar que el servicio de correo esté habilitado
 
 ---
 
-## 📚 Recursos Adicionales
+## 📚 Recursos y Referencias
 
 - [Documentación Oficial GLPI 10](https://glpi-project.org/documentation/)
 - [GLPI GitHub Repository](https://github.com/glpi-project/glpi)
@@ -355,30 +418,30 @@ sudo bash Script/configuracion_inicial.sh
 
 ---
 
-## 👨‍💻 Autor y Contexto Académico
+## 👨‍💻 Información del Proyecto
 
-**Proyecto Académico-Práctico**: Sistema de Mesa de Ayuda con GLPI 10  
+**Tipo de Proyecto**: Académico-Profesional (Portafolio)  
 **Nivel**: Help Desk / Soporte TI  
 **Contexto**: Empresarial Peruano (multi-sede)  
-**Objetivo**: Demostrar competencias completas en infraestructura, ITIL y gestión de servicios
+**Objetivo**: Demostrar competencias completas en **infraestructura, ITIL y gestión de servicios**
+
+### Estado del Proyecto
+
+**Estado**: ✅ **Proyecto Completo y Funcional**  
+**Última actualización**: Diciembre 2025  
+**Versión GLPI**: 10.0.14
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto es de uso educativo y demostrativo. Siéntete libre de usarlo como referencia para implementaciones similares.
+Este proyecto es de **uso educativo y demostrativo**. Siéntete libre de usarlo como referencia para implementaciones similares.
 
 ---
 
 ## 🌟 Agradecimientos
 
-- Comunidad GLPI por el excelente software open source
-- Documentación de Ubuntu Server y Apache
-- Foros de soporte técnico y Stack Overflow
-- Comunidad ITIL por las mejores prácticas en gestión de servicios
-
----
-
-**Última actualización**: Diciembre 2025  
-**Versión GLPI**: 10.0.14  
-**Estado**: ✅ Proyecto Completo y Funcional
+- Comunidad **GLPI** por el excelente software open source
+- Documentación de **Ubuntu Server** y **Apache**
+- Foros de soporte técnico y **Stack Overflow**
+- Comunidad **ITIL** por las mejores prácticas en gestión de servicios
